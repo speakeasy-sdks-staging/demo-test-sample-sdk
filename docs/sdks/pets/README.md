@@ -17,9 +17,10 @@ Create a pet
 package main
 
 import(
+	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 	"context"
 	"log"
-	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
+	"net/http"
 )
 
 func main() {
@@ -46,8 +47,10 @@ func main() {
 
 ### Response
 
-**[*operations.CreatePetsResponse](../../models/operations/createpetsresponse.md), error**
-
+**[*operations.CreatePetsResponse](../../pkg/models/operations/createpetsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## ListPets
 
@@ -59,9 +62,9 @@ List all pets
 package main
 
 import(
+	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 	"context"
 	"log"
-	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 )
 
 func main() {
@@ -92,8 +95,10 @@ func main() {
 
 ### Response
 
-**[*operations.ListPetsResponse](../../models/operations/listpetsresponse.md), error**
-
+**[*operations.ListPetsResponse](../../pkg/models/operations/listpetsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## ShowPetByID
 
@@ -105,9 +110,9 @@ Info for a specific pet
 package main
 
 import(
+	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 	"context"
 	"log"
-	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 )
 
 func main() {
@@ -138,5 +143,7 @@ func main() {
 
 ### Response
 
-**[*operations.ShowPetByIDResponse](../../models/operations/showpetbyidresponse.md), error**
-
+**[*operations.ShowPetByIDResponse](../../pkg/models/operations/showpetbyidresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

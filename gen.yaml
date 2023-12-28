@@ -2,29 +2,39 @@ configVersion: 1.0.0
 management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
-  speakeasyVersion: 1.111.2
-  generationVersion: 2.173.0
+  speakeasyVersion: 1.129.1
+  generationVersion: 2.223.3
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
-  flattenGlobalSecurity: true
-  repoURL: https://github.com/speakeasy-sdks-staging/demo-test-sample-sdk.git
+  comments: {}
   sdkClassName: Swagger-Petstore
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks-staging/demo-test-sample-sdk.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
+  baseServerURL: ""
+  fixes:
+    nameResolutionDec2023: false
+  flattenGlobalSecurity: true
 features:
   go:
-    core: 2.94.0
+    core: 3.2.2
     flattening: 2.81.1
-    globalServerURLs: 2.82.0
+    globalServerURLs: 2.82.1
 go:
-  version: 0.1.0
+  version: 0.2.0
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
+  imports:
+    option: openapi
+    paths:
+      callbacks: pkg/models/callbacks
+      errors: pkg/models/sdkerrors
+      operations: pkg/models/operations
+      shared: pkg/models/shared
+      webhooks: pkg/models/webhooks
+  inputModelSuffix: input
   installationURL: https://github.com/speakeasy-sdks-staging/demo-test-sample-sdk
   maxMethodParams: 4
+  outputModelSuffix: output
   packageName: github.com/speakeasy-sdks-staging/demo-test-sample-sdk
   published: true
   repoSubDirectory: .

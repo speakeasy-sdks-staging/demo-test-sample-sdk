@@ -1,6 +1,4 @@
-<!-- Start SDK Example Usage -->
-
-
+<!-- Start SDK Example Usage [usage] -->
 ```go
 package main
 
@@ -8,6 +6,7 @@ import (
 	"context"
 	demotestsamplesdk "github.com/speakeasy-sdks-staging/demo-test-sample-sdk"
 	"log"
+	"net/http"
 )
 
 func main() {
@@ -25,4 +24,4 @@ func main() {
 }
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
